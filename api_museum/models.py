@@ -25,7 +25,7 @@ class Medium(models.Model):
 
 class Museum(models.Model):
     name = models.CharField(max_length=200)
-    description = models.CharField(max_length=200)
+    description = models.TextField(max_length=200)
     city = models.CharField(max_length=200)
     country = models.CharField(max_length=200)
     address = models.CharField(max_length=1000)
